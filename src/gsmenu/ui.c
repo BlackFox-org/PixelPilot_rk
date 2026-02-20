@@ -466,5 +466,6 @@ static void back_event_handler(lv_event_t * e)
         lv_screen_load(pp_osd_screen);
         lv_indev_set_group(indev_drv,osd_group);
         menu_active = false;
+        system("./etc/init.d/S99gamma start");
     }
 }
