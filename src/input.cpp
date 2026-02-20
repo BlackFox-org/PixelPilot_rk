@@ -424,6 +424,7 @@ void toggle_screen(void) {
         lv_indev_set_group(indev_drv,main_group);
         lv_obj_invalidate(pp_menu_screen);
         menu_active = true;
+        system("./etc/init.d/S99gamma stop");
     }
 }
 
